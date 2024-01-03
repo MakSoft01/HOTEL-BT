@@ -1,0 +1,390 @@
+/* reset */
+/* There are three ways of writing css
+inline-styling
+external-styling
+internal-styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For smooth scrolling:- please note this */
+/* html{
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* .grid{
+    margin: 0rem auto;
+    max-width: 40vw;
+    text-align: center;
+    display: block;
+} */
+
+
+
+.float1{
+    float: left;
+    width: 65%;
+} 
+
+
+.float2 img{
+    float: right;
+    width: 35%;
+    min-height: 100%;
+    padding: 3rem;
+    display: flex;
+    border-radius: 50%;
+}  
+
+
+.l-head{
+    margin: 10px;
+    font-size: 1rem
+}
+
+.space{
+    padding: 50px;
+    margin-top: 1rem;  
+}
+
+
+.margin2{
+    background-color: peru;
+    opacity: 0.9;
+    width: 1120px;
+    padding: 1px;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.margin2 img{
+    border-left: 1rem;
+    float: left;
+    width: 10%;
+    padding: 1rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.break{
+    margin-top: 3rem;
+}
+
+.black-bg{
+    background-color: black;
+}
+
+.dark-bg{
+    background-color:#333;
+    color:#fff
+}
+
+.light-bg{
+   background-color: #fff;
+   color: #333;
+   padding: 1rem;
+   border-radius: 5px;
+}
+
+#light-bg{
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.primary-bg{
+    background-color: peru;
+    color: #333;
+}
+
+.ash-bg{
+    background-color: rgb(211, 211, 211);
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    overflow:auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover, .Current, .primary-text{
+    color: peru;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0.1rem auto;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Padding made the black housing the HBT as well as the home, contact and about to shrink up */
+    padding: 0.1rem;
+}
+
+#logo-text{
+    display: flex;
+    /* To correct the HBT font-size in the contact page */
+    font-size: 1.5rem;
+}
+
+#link-pages{
+    display: flex;
+    list-style: none;
+} 
+
+#link-pages li{
+    display:inline-block;
+    padding: 1rem;
+}
+
+#group{
+    padding: 2rem;
+    margin: 3rem;
+}
+#group{
+    width: 40%;
+    height: 60%;
+    padding: 5rem;
+    margin: 5rem;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.l-header{
+    font-size: 2.5rem;
+
+    /* The margin-top brought the Contact Us down */
+    margin-top:2rem;
+}
+
+.test-bg{
+    background-image: url(./test-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+    text-align: center;
+    color: #fff; 
+    margin-top: 20rem;
+}
+
+.show-case{
+    background-image: url("../Hotelwebsite/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    color: #fff; 
+    min-width: 100vw;
+    padding: 3rem;
+}
+.show-case-content{
+    padding: 0.1rem 1rem; 
+    margin-bottom: 2rem;
+} 
+
+
+.show-case-content p{
+    padding: 2rem 1rem;
+}
+
+.btn1{
+   background-color: #333;
+   color: #fff;
+   text-decoration: none;
+   padding: 1rem 2rem;
+   border-radius: 20px;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-size: 1rem;
+}
+
+.btn2{
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+ }
+
+ .btn2:hover{
+    background-color: peru;
+    color: black;
+ }
+
+
+.btn1:hover{
+    background-color: peru;
+    color: #333;
+}
+
+
+.history-section{
+    min-width: 100vw;
+    height: 400px;
+    display: flex;
+}
+
+.history-image{
+    display: flex;
+    width: 50%;
+}
+
+.history-image img{
+    width: 100%;
+    height: 450px;
+}
+
+.history-content{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.history-content p{
+   margin: 1rem;
+}
+
+
+
+footer{
+    background-color:#333;
+    text-align: center;
+    display: block;
+    color: #fff;
+    padding: 2rem;
+}
+
+/* contact page */
+form{
+    margin: 1rem auto;
+
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10rem;
+} 
+
+.form-group label{
+    display: block;
+}
+
+.form-group input, 
+.form-group textarea{
+    width: 100%;
+    height: 2rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline: none;
+    border:1px solid peru;
+}
+
+.box{
+    width:33.4%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* shadows */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.flex-container{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change-color, fas fa-dumbbell fa-3x{
+    color: #fff;
+} 
+
+.change-view{
+    color: black;
+} 
+
+
+.spaces{
+    margin-bottom: 1.5rem;
+}
+
+.back{
+    background-color: #fff;
+}
+
+/* You can use this to change colors of a grouped column */
+/* .first-child{
+    background-color: blue;
+    color: #fff;
+    padding: 5rem;
+} */
+
+/* After you've written all your CSS then you can add media query for each screen, either tablet or laptop or a phone */
+/*Media query helps site to be well constructed.  */
+
+/* It's working for tablets */
+/* @media screen and (max-width:800px){
+    #navbar{
+        align-items: center;
+        tet-align: center;
+        justify-content: Center;
+        flext-direction:column;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+} */
+
+/* It's working for andriod phones */
+/* 
+@media screen and (max-width:500px) {
+    #who{
+        flex-direction: column;
+        height: 800px;
+    }
+} */
+
+
+.contacting{
+    background-color:#383232;
+}
+
+.boxes{
+    width:20%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
